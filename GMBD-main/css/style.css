@@ -1,0 +1,140 @@
+body {
+    padding-top: 65px;
+    margin: 0;
+    font-family: arial;
+}
+
+#SLIDE_BG{
+    width:100%;
+    height:100%;
+    background-position:center, center;
+    background-image: url(/img/bk.jfif);
+    background-size:cover;
+    background-repeat:no-repeat;
+    backface-visibility:hidden;
+    animation: slideBG 30s linear infinite 0s;
+    animation-timing-function: ease-in-out;
+    background-image: url('/img/bk.jfif')
+}
+
+.hcontainer{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    text-transform: uppercase;
+    text-align:center;
+}
+
+@keyframes slideBG{
+    0%, 100%{
+        background-image: url('/img/bk.jfif'), url('/img/bk1.jpg')
+    }
+    25%{
+        background-image: url('/img/bk1.jpg'), url('/img/bk2.jpg')
+    }
+    50%{
+        background-image: url('/img/bk2.jpg'), url('/img/bk3.jpg')
+    }
+    75%{
+        background-image: url('/img/bk3.jpg'), url('/img/bk.jfif')
+    }
+} 
+
+.landingpage {
+    background-color: black;
+    background-image:url(bk.jfif)
+}
+
+.header2{
+    -webkit-text-stroke-width: .5px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+.header1{
+    font-size:120px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+.container{
+    padding-top: 25px
+}
+
+.fullBackground{
+    background-position: center center;
+    background-attachment: fixed;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.caption{
+    font-size: 30pt;
+    text-transform: uppercase;
+    color: white;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+#venue-directory-header {
+    background-image:url(/img/wsbk.jpg);
+    border-bottom: double;
+    border-bottom-color: gold;
+    padding-bottom: 150px;
+    padding-top: 1px
+}
+
+#venue-directory-header h1 {
+    font-size: 100px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+#artist-directory-header {
+    background-image:url(/img/extra.jpg);
+    border-bottom: double;
+    border-bottom-color: gold;
+    padding-bottom: 150px;
+    padding-top: 1px;
+    margin-bottom: 24px;
+}
+
+#artist-directory-header h1 {
+    font-size: 100px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+#register-account-header {
+    background-image:url(/img/extra.jpg);
+    border-bottom: double;
+    border-bottom-color: gold;
+    padding-bottom: 150px;
+    padding-top: 1px;
+    margin-bottom: 24px;
+}
+
+#register-account-title {
+    font-size: 100px;
+    -webkit-text-stroke-width: 2px;
+    -webkit-text-stroke-color: black;
+    color: white;
+}
+
+#admin-dashboard-header {
+    background-color: lightblue;
+    border-bottom: double;
+    border-bottom-color: gold;
+    padding-bottom: 150px;
+    padding-top: 1px
+}
